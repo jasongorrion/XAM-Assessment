@@ -56,3 +56,15 @@ body{
 .col-3{
     width: 25%;
 }
+
+
+.animated{
+    opacity:0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: translateY(30px);
+}
+
+.animated.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
