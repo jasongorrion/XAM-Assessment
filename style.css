@@ -61,6 +61,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    
 }
 
 .sliding_words_list{
@@ -72,7 +73,26 @@
     height: auto;
     margin: 0;
     padding:0;
+    -webkit-animation-name: wordSlider;
+    animation-name: wordSlider;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
 }
+
+@keyframes wordSlider {
+    0%   {top: -10px;}
+    20%  {top: -85px;}
+    40%  {top: -165px;}
+    60% {top: -240px;}
+    80% {top: -315px;}
+    100% {top: -395px;}
+}
+
+
 .heading_title{
     font-size: 64px;
     font-weight: 500;
