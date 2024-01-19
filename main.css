@@ -22,6 +22,7 @@ body{
     width: 100%;
     max-width: 1144px;
     margin: 0 auto;
+    position: relative;
 }
 
 .colWrapper.fullWidth{
@@ -30,7 +31,6 @@ body{
 
 .col{
     display: block;
-    position: relative;
 }
 
 .col-12{

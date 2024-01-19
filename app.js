@@ -1,4 +1,27 @@
 (function() {
+    //Mega Menu
+    $(".has_sub_nav").hover(function () {
+        $(this).addClass('mega_menu_active');
+        $('header').addClass('mega_nav_active');
+    }, function () {
+        let elem = $(this)
+
+        setTimeout(function(){ 
+            elem.removeClass('mega_menu_active');
+            $('header').removeClass('mega_nav_active');
+        },800);
+    });
+
+    $(".mega_menu").hover(function () {
+        $('.has_sub_nav').addClass('mega_menu_active');
+        $('header').addClass('mega_nav_active');
+    }, function () {
+        setTimeout(function(){ 
+            $('.has_sub_nav').removeClass('mega_menu_active');
+            $('header').removeClass('mega_nav_active');
+        },800);
+    });
+
     //On scroll Animation
     let offset = 700;//Distance from Top before trigger animation
     let element_with_animation = $('.animated'); //Elements with animation
