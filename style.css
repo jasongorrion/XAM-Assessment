@@ -54,6 +54,10 @@
     transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in;
 }
 
+.nav_item:not(:last-child):hover a:before {
+    opacity: 1;
+}
+
 .nav_item:last-of-type {
     padding-left: 1.25rem;
     background-color: transparent;
